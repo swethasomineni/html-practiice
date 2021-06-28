@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+     const name = "swetha";
+     const newValue="jayanth"
+     const c={
+         name:"swe",
+         age:34,
+         mail:"swe"
+     }
+     localStorage.setItem("details",JSON.stringify(c)); 
+      const s=localStorage.getItem('details')
+     console.log(s)
+     console.log(typeof s);
+     // JSON.parse(localStorage.getItem(c));
+      //console.log(c);
+        localStorage.setItem('name',name);
+        localStorage.setItem('name', newValue);
+       // localStorage.removeItem('name');
+       //localStorage.clear();
+    //    if(localStorage.length>0){
+    //        console.log("number of items",localStorage.length);
+    //    }
+    console.log(localStorage.length);
+    for(let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        console.log(key);
+         const d=localStorage.getItem(key);
+         console.log(d);
+    }
+    console.log(window.localStorage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

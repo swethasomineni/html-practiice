@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" value="very poor" name="rating">very poor
+    <input type="radio" value="poor" name="rating">poor
+    <input type="radio" value="average" name="rating">average
+    <input type="radio" value="good" name="rating">good
+    <input type="radio" value="verygood" name="rating">verygood
+
+    <div>
+        <button onclick="getRating()">Get Selected Radio</button>
+    </div>
+    <script>
+        function getRating() {
+            const inputs = document.getElementsByTagName('input');
+            console.log(inputs);
+
+            Array.from(inputs).forEach(function (data) {
+                console.dir(data);
+                if(data.checked===true){
+                    alert(data.value)
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

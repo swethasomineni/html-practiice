@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="input1" type="text">
+    <input  id="input2" type="text">
+    <button  onclick="arith('add')">add</button>
+    <button onclick="arith('sub')">sub</button>
+    <button onclick="arith('mul')">mul</button>
+    <p id="inn"></p>
+</body>
+<script>
+    function arith(type){
+        const a=document.getElementById("input1").value;
+        const b=document.getElementById("input2").value;
+        console.log(a)
+        console.log(b);
+        if(type==="add"){
+           const c= document.getElementById("inn");
+            c.innerHTML = `${Number(a) + Number(b)}`;
+        }else if(type==="sub"){
+            const c = document.getElementById("inn");
+            c.innerHTML = `${Number(a) - Number(b)}`;
+        }else if(type==="mul"){
+             const c = document.getElementById("inn");
+            c.innerHTML = `${Number(a) * Number(b)}`;
+
+        }
+    }
+</script>
+</html>

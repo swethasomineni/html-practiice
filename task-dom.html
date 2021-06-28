@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="rating" value="very poor">very poor
+    <input type="radio" name="rating" value="ok">ok
+    <input type="radio" name="rating" value="good">good
+    <input type="radio" name="rating" value="average">avearge
+    <input type="radio" name="rating" value=" poor">poor
+    <button onclick="buttonworking()">clickme</button>
+    <script>
+        function buttonworking() {
+            const elements = document.getElementsByName("rating");
+            console.log(elements);
+            var n = 0;
+            elements.forEach(function (input) {
+                console.log(input);
+                if (input.checked === true) {
+                    alert(input.value)
+                }
+                else {
+                    n += 1;
+                    console.log(n);
+                    if (elements.length === n) {
+                        alert("does not select anything");
+                    }
+
+                }
+            })
+        }
+    </script>
+
+
+</html>

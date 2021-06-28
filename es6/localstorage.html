@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="demo.html" >demo</a>
+</body>
+<script>
+//   const details={
+//       name:"swe",
+//       age:30,
+//   }
+//     localStorage.setItem("data","swetha");
+//     const stringifiedObject=JSON.stringify(details);
+//     localStorage.setItem("data1", stringifiedObject)
+//sessionStorage.setItem("name","swetha");
+console.log(localStorage.getItem("data1"));
+if(localStorage.length>2){
+    console.log("number of items")
+}else{
+    console.log("no items");
+}
+    if (window.localStorage) {
+       console.log(localStorage);
+    } for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            let value = localStorage.getItem(key);
+            console.log(key, value);
+        }
+        
+
+
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Check if the sessionStorage object exists
+    if (sessionStorage) {
+        // Store data
+        sessionStorage.setItem("last_name", "Parker");
+
+        // Retrieve data
+        alert("Hi, " + localStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+    } else {
+        alert("Sorry, your browser do not support session storage.");
+    }
+
+    function add(a,b,c,d) {
+      console.log(arr)
+    }
+    const arr = [1,2,3,4]
+    add(...arr)
+
+</script>
+
+</html>
